@@ -1,1 +1,1 @@
-# message-app
+# Social media app
