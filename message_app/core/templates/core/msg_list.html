@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msgs</title>
+</head>
+<body>
+    <h1>All Msgs</h1>
+    <ul>
+        {% for msg in msgs %}
+            <li>
+                <strong>{{ msg.user.username }}</strong>: {{ msg.content }} 
+                <em>({{ msg.created_at }})</em>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
